@@ -1,0 +1,19 @@
+# **Requerimientos Técnicos**
+# > Es recomendable crear y activar un ambiente virtual
+# 
+# Intalar las siguientes librerias: 
+# > **nltk**: Natural Language Toolkit. NLTK es una plataforma líder para la construcción de programas de Python para trabajar con datos del lenguaje humano. <br>
+# 
+# > **Spacy**. Es una biblioteca de software de código abierto para el procesamiento avanzado del lenguaje natural, escrita en los lenguajes de programación Python y Cython.
+
+# Después de instalar las librerías. Para Spacy, se necesita:
+# 
+# > python -m spacy download en_core_web_sm 
+# 
+# Para más información: https://github.com/explosion/spacy-models/releases/tag/en_core_web_sm-3.1.0
+
+# Finalmente para NLTK es necesario:
+# 
+# > import nltk
+# 
+# > nltk.download('punkt')
