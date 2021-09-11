@@ -1,85 +1,43 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# # Eliminación de STOPWORDS
-
-# Las Stop Words o palabras vacías, hacen referencia a aquellas palabras que no están registradas por los robots de Google, las cuales carecen de sentido cuando se escriben solas o sin la palabra clave o keyword. 
-
-# In[1]:
-
+# Eliminación de STOPWORDS
 
 # Importamos los módulos necesarios
 import csv
 import nltk
 
-
-# In[3]:
-
+# Lectura de los stopwords en inglés
 
 csv_file="stopwords.csv"
 
-
-# In[4]:
-
-
+# Primer método
 with open(csv_file, 'r', encoding='utf-8') as fp:
     reader = csv.reader(fp, delimiter=',', quotechar='"')
     stopwords = [row[0] for row in reader]
 
-
-# In[8]:
-
-
-print(type(stopwords))
-
-
-# In[9]:
+#print(type(stopwords))
 
 
 # Forma alterna usando NLTK
-stopwords_2 = nltk.corpus.stopwords.words('english') # Para inglés
+stopwords_2 = nltk.corpus.stopwords.words('english') 
 
 
-# In[11]:
+### Ejemplo práctico ###
 
-
-# imprimir los primeros 5 elementos de la lista:
-print(stopwords_2[0:5])
-
-
-# In[12]:
-
+#Lectura del archivo
 
 filename = "GOT.txt"
 file = open(filename, "r", encoding="utf-8")
 text = file.read()
 
-
-# In[15]:
-
-
+# Reemplazar saltos de línea por espacios
 text = text.replace("\n", " ")
-text
-
-
-# In[17]:
-
+print(text)
 
 # Tokenizar el texto:
 words = nltk.tokenize.word_tokenize(text)
-words
-
-
-# In[18]:
 
 
 # Eliminar los stopwords:
 words = [word for word in words if word.lower() not in stopwords]
-words
-
-
-# In[ ]:
-
-
+print(words)
 
 
