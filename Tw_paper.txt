@@ -1,0 +1,14 @@
+Online antisocial behavior is a social problem and a
+public health threat. A manifestation of such behavior may be fun
+for a perpetrator, however, can drive a victim into depression, 
+self-confinement, low self-esteem, anxiety, anger, and
+suicidal ideation. Online platforms such as Twitter and Facebook
+can sometimes become breeding grounds for such behavior. These platforms may
+have measures in place to deter online antisocial behavior, however, such
+behavior still prevails. Most of the measures rely on users reporting to
+platforms for intervention. In this paper, we advocate a more proactive
+approach based on natural language processing and machine learning that
+can enable online platforms to actively look for signs of antisocial
+behavior and intervene before it gets out of control. By actively searching
+for such behavior, social media sites can possibly prevent dire situations
+that can lead to someone committing suicide.
